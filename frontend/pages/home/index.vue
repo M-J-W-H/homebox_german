@@ -28,14 +28,14 @@
   <div>
     <BaseContainer class="flex flex-col gap-12 pb-16">
       <section>
-        <Subtitle> Quick Statistics </Subtitle>
+        <Subtitle> Statistiken </Subtitle>
         <div class="grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-6">
           <StatCard v-for="(stat, i) in stats" :key="i" :title="stat.label" :value="stat.value" :type="stat.type" />
         </div>
       </section>
 
       <section>
-        <Subtitle> Recently Added </Subtitle>
+        <Subtitle> Vor kurzem hinzugefügt </Subtitle>
 
         <BaseCard v-if="breakpoints.lg">
           <ItemViewTable :items="itemTable.items" />
@@ -46,7 +46,7 @@
       </section>
 
       <section>
-        <Subtitle> Storage Locations </Subtitle>
+        <Subtitle> Orte </Subtitle>
         <div class="grid grid-cols-1 sm:grid-cols-2 card md:grid-cols-3 gap-4">
           <LocationCard v-for="location in locations" :key="location.id" :location="location" />
         </div>
