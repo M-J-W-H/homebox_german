@@ -39,9 +39,9 @@
 
 <template>
   <BaseContainer cmp="section">
-    <BaseSectionHeader> Add an Item To Your Inventory </BaseSectionHeader>
+    <BaseSectionHeader> Gegenstand hinzufügen </BaseSectionHeader>
     <form class="max-w-3xl mx-auto my-5 space-y-6" @submit.prevent="submit">
-      <div class="divider collapse-title px-0 cursor-pointer">Required Information</div>
+      <div class="divider collapse-title px-0 cursor-pointer">Benötigte Informationen</div>
       <div class="bg-base-200 card">
         <div class="card-body">
           <FormTextField v-model="form.name" label="Name" />
